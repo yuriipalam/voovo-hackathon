@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+
+  }
+}
+
+@layer layout {
+  .container {
+    @apply px-3 md:px-6 mx-auto;
+  }
+}
+
+@layer typography {
+  .font {
+    &-dmsans {
+      font-family: "DM Sans", sans-serif;
+    }
+  }
+
+  .break-anywhere {
+    overflow-wrap: anywhere;
+  }
+}
+
+@layer utilities {
+
+}
